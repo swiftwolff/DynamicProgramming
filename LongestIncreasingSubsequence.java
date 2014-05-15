@@ -14,10 +14,8 @@ class LongestIncreasingSubsequence{
         	DP[i] = 1;  //initialize here b/c everything will start at 1 count itself
             for(int j=0;j<i;j++){
             
-                if(arry[i]>arry[j]){
-                    if(DP[j]+1 > DP[i]){
+                if(arry[i]>arry[j] && DP[j]+1 > DP[i]){
                         DP[i] = DP[j]+1;
-                    }
                 }
 //                else{
 //                    DP[i] = 1;  take this line away b/c all items initialized to 1
