@@ -8,8 +8,10 @@ class LongestIncreasingSubsequence{
         int max = Integer.MIN_VALUE;
         int[] DP = new int[arry.length];  //this costs n space
         
-        DP[0] = 1;  //initialize
-        for(int i=1;i<arry.length;i++){
+//        DP[0] = 1;  //initialize
+        
+        for(int i=0;i<arry.length;i++){
+        	DP[i] = 1;  //initialize here b/c everything will start at 1 count itself
             for(int j=0;j<i;j++){
             
                 if(arry[i]>arry[j]){
