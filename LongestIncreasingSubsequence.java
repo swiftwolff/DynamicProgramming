@@ -18,9 +18,10 @@ class LongestIncreasingSubsequence{
                     if(DP[j]+1 > DP[i]){
                         DP[i] = DP[j]+1;
                     }
-                }else{
-                    DP[i] = 1;
                 }
+//                else{
+//                    DP[i] = 1;  take this line away b/c all items initialized to 1
+//                }
                 
                 if(DP[i]>max) max = DP[i];
             }
