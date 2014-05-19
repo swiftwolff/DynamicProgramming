@@ -27,6 +27,8 @@ class LongestIncreasingSubsequence{
         
         return max;
     }
+    
+    
 
     public static void main(String args[]){
     	int[] arry = {9,50,2,13,7,15};
